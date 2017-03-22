@@ -57,6 +57,13 @@ for(var i = 0; i < items.length; i++) {
 
 }
 
+
+//※論理演算子の「||」を使って、「if文」を1行にすることもできます。
+if(items[i] === 1 || items[i] === 4) console.log(items[i]);
+
+
+
+
 //※「if文」ではなく「switch文」でも構いません
 var items = [2, 4, 6, 1, 7];
 
