@@ -1,1 +1,1 @@
-# basic
+# JavaScriptの基本的なサンプル
