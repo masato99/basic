@@ -2,7 +2,31 @@
 //「for - in文」ミニテスト
 /*****************************************/
 
-//① オブジェクトに「'母国語': '日本語'」を追加して「日本語」だけが表示されるようにしてください
+//① 現在のオブジェクトの中身を取得して、「プロパティ名：プロパティの値」という形式で出力してください
+var friends = {
+    name: '佐藤',
+    age: 32,
+    address: '東京都新宿区',
+    '趣味': 'プログラミング'
+}
+
+for( var list in friends ) {
+
+    // 不要なプロパティは除外する
+    if( friends.hasOwnProperty( list ) ) {
+
+        console.log( list + ': ' + friends[list] );
+
+  }
+
+}
+
+//プロパティ名が「list」、プロパティの値が「friends[list]」となります。
+
+
+
+
+//② オブジェクトに「'母国語': '日本語'」を追加して「日本語」だけが表示されるようにしてください
 var friends = {
 
     name: '佐藤',
@@ -26,28 +50,6 @@ for( var list in friends ) {
 }
 
 //※基本的に「hasOwnProperty」は省略しないようにしましょう。
-
-
-
-
-//② オブジェクトのプロパティの値を必ず順番通りにすべて表示するように変更してください
-var friends = {
-
-    name: '佐藤',
-    age: 32,
-    address: '東京都新宿区',
-    '趣味': 'プログラミング'
-    
-}
-var keys = Object.keys(friends);
-
-for(var i = 0; i < keys.length; i++) {
-  
-  console.log(friends[ keys[i] ]);
-  
-}
-
-//※オブジェクトのプロパティを順番通りに取得する必要がある場合は「Object.keys()」を使いましょう
 
 
 
